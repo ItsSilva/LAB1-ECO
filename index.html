@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API LAB1</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #data-container {
+        margin-top: 20px;
+      }
+      .item {
+        margin-bottom: 10px;
+      }
+      img {
+        max-width: 300px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cats Facts</h1>
+    <button id="fetch-button-cats">Fetch Cats Facts</button>
+    <div id="data-container-cats"></div>
+    <h1>Activity</h1>
+    <button id="fetch-button-Activity">Fetch Activity</button>
+    <div id="data-container-Activity"></div>
+    <section id="anime-section">
+      <h1>Anime API</h1>
+      <div id="inputs">
+        <form id="anime-forms">
+          <input
+            id="number"
+            type="number"
+            placeholder="Enter a valid number"
+            min="1"
+            max="25"
+            required
+          />
+          <select id="status" required>
+            <option value="airing">Airing</option>
+            <option value="complete">Complete</option>
+            <option value="upcoming">Upcoming</option>
+          </select>
+          <select id="type" required>
+            <option value="tv">TV</option>
+            <option value="movie">Movie</option>
+            <option value="ova">OVA</option>
+            <option value="special">Special</option>
+            <option value="music">Music</option>
+            <option value="cm">CM</option>
+            <option value="pv">PV</option>
+            <option value="tv_special">TV Special</option>
+          </select>
+          <input id="fetch-button-anime" type="submit" value="Fetch Anime" />
+        </form>
+      </div>
+      <div id="data-container-anime"></div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
